@@ -1,6 +1,5 @@
 from crypto_utils import MotorCriptografico
 
-# Probamos con 1024 bits como pidió el profesor
 motor = MotorCriptografico(bits=1024)
 
 mensaje = "Este es un secreto universitario"
