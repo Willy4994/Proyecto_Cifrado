@@ -16,7 +16,7 @@ gestor = MotorCriptografico(bits=2048)
 
 @app.get("/")
 def inicio(request: Request):
-    # Formato actualizado para evitar TypeError
+
     return templates.TemplateResponse(request, "index.html")
 
 @app.post("/cifrar")
