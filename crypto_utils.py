@@ -3,7 +3,7 @@ from cryptography.hazmat.primitives import hashes, serialization
 
 class MotorCriptografico:
     def __init__(self, bits=2048):
-        # Generamos las llaves según los bits que elija el usuario
+        # Generamos llaves depende los bits que elija el usuario
         self.private_key = rsa.generate_private_key(
             public_exponent=65537,
             key_size=bits
@@ -11,7 +11,7 @@ class MotorCriptografico:
         self.public_key = self.private_key.public_key()
 
     def cifrar(self, texto: str) -> bytes:
-        # Transformamos el texto en algo secreto
+        # Transformamos el texto en algo oculto o secreto
         return self.public_key.encrypt(
             texto.encode(),
             padding.OAEP(
