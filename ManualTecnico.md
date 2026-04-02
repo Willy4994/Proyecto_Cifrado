@@ -27,7 +27,7 @@ El sistema emplea una arquitectura robusta basada en el framework **FastAPI** y 
 1. El sistema recibe el texto plano y la etiqueta.
 2. El `MotorCriptografico` genera un par de llaves RSA.
 3. Se cifra el contenido con la `public_key` y se guarda en `registro_mensajes`.
-4. Se genera un `Token` asociado con una validez de 7 días ($T + 168$ horas).
+4. Se genera un `Token` asociado con una validez de 7 días.
 
 ### 3.2 Proceso de Descifrado (Lectura)
 1. El usuario ingresa el `token_string`.
