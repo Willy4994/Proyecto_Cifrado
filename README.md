@@ -8,7 +8,7 @@
 ---
 
 ## Descripción del Proyecto
-Aplicación web desarrollada con **FastAPI** que permite el cifrado de mensajes mediante el algoritmo **RSA de 2048 bits**. El sistema garantiza la confidencialidad mediante un esquema de tokens de un solo uso y auditoría de accesos.
+El sistema garantiza la confidencialidad mediante un esquema de tokens de un solo uso y auditoría de accesos.
 
 ## Guía de Usuario
 1. **Cifrar:** Ingrese una etiqueta y el mensaje. El sistema le entregará un **Token** único.
